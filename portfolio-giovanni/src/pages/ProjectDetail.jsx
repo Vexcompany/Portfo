@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle2, Clock, Circle, Zap, Target, User, Layers } from 'lucide-react';
-import { techStack, roadmap } from '../data';
+import { techStack, roadmap, personalProjects } from '../data';
 import Footer from '../components/Footer';
 
 const statusConfig = {
@@ -13,9 +13,9 @@ const statusConfig = {
 const modules = [
   { name: 'PAGASKA Website', desc: 'Website resmi organisasi. React + Vite + TailwindCSS. Deployed di Vercel.', status: 'live' },
   { name: 'Zephyrus Music', desc: 'Platform streaming musik internal. Supabase + Cloudflare R2 + PWA support.', status: 'live' },
-  { name: 'Taksaka AI', desc: 'Sistem AI multi-provider. OpenRouter integration + health tracking + cooldown management.', status: 'active' },
+  { name: 'Taksaka AI', desc: 'Sistem AI multi-provider. OpenRouter integration + health tracking + cooldown management.', status: 'live' },
   { name: 'Vero Git Manager', desc: 'Telegram bot untuk manajemen Git repository via mobile. Node.js + Pterodactyl.', status: 'live' },
-  { name: 'PAGASKA REST API', desc: 'API modular dengan auto-loading architecture, Telegram rate-limit notif, dan AI auto-repair engine.', status: 'active' },
+  { name: 'PAGASKA REST API', desc: 'API modular dengan auto-loading architecture, Telegram rate-limit notif, dan AI auto-repair engine.', status: 'live' },
   { name: 'Verolyz Marketplace', desc: 'Digital marketplace produksi dengan Next.js 15, Better Auth, Neon PostgreSQL.', status: 'dev' },
 ];
 
@@ -52,7 +52,7 @@ export default function ProjectDetail() {
           >
             <div className="flex items-center gap-2 mb-6">
               <span className="w-2 h-2 bg-[#CC0000] rounded-full animate-pulse" />
-              <span className="font-mono text-xs text-[#CC0000] tracking-widest uppercase">Live Project · 2024–Present</span>
+              <span className="font-mono text-xs text-[#CC0000] tracking-widest uppercase">Live Project · 2025–2026</span>
             </div>
 
             <h1 className="font-syne font-black leading-[0.9] text-[#F0F0F0] mb-6"
@@ -248,6 +248,37 @@ export default function ProjectDetail() {
                   </motion.div>
                 );
               })}
+            </div>
+          </Section>
+
+          {/* Personal Projects */}
+          <Section title="Project Pribadi">
+            <div className="grid sm:grid-cols-2 gap-4">
+              {personalProjects.map((proj, i) => (
+                <motion.div
+                  key={proj.name}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.07 }}
+                  className="p-5 border border-[#1E1E1E] bg-[#111111] hover:border-[#CC0000]/30 transition-all duration-300"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <h4 className="font-syne font-bold text-[#F0F0F0] text-sm">{proj.name}</h4>
+                    <span
+                      className="font-mono text-[9px] px-2 py-1 border tracking-widest flex-shrink-0 ml-2"
+                      style={{
+                        color: proj.status === 'Under Development' ? '#4C6CC9' : '#C9A84C',
+                        borderColor: proj.status === 'Under Development' ? '#4C6CC933' : '#C9A84C33',
+                        background: proj.status === 'Under Development' ? '#4C6CC911' : '#C9A84C11',
+                      }}
+                    >
+                      {proj.status}
+                    </span>
+                  </div>
+                  <p className="font-dm text-xs text-[#555555] leading-relaxed">{proj.desc}</p>
+                </motion.div>
+              ))}
             </div>
           </Section>
         </div>
