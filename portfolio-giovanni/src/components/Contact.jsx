@@ -54,8 +54,9 @@ export default function Contact() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="font-dm text-[#888888] leading-relaxed mb-10 max-w-sm"
             >
-              Saya terbuka untuk peluang kerja, kolaborasi project, atau sekadar
-              berdiskusi tentang teknologi dan desain.
+              Terima kasih telah mengunjungi portofolio saya. Apabila ingin mengetahui
+              lebih lanjut mengenai pengalaman maupun karya saya, silakan hubungi melalui
+              kontak yang tersedia.
             </motion.p>
 
             {/* Info */}

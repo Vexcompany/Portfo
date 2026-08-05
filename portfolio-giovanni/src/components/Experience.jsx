@@ -81,7 +81,7 @@ export default function Experience() {
                       : 'bg-[#111111] border-[#1E1E1E]'
                   }`}>
                     <span className="font-syne font-black text-[10px] text-white">
-                      {exp.year.slice(2)}
+                      {exp.year.slice(2, 4)}
                     </span>
                   </div>
 
