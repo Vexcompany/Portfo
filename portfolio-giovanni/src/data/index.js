@@ -59,6 +59,10 @@ export const portfolioItems = [
 
 export const skills = [
   {
+    category: "Desain",
+    items: ["Canva", "CapCut", "Alight Motion"]
+  },
+  {
     category: 'Design',
     icon: '✦',
     items: ['Figma', 'UI/UX Design', 'Design Systems', 'Brand Identity', 'Motion Design', 'Typography'],
