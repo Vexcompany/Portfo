@@ -8,7 +8,7 @@ export const portfolioItems = [
       'Website resmi organisasi PAGASKA SMK Negeri 5 Kota Madiun. Dibangun dari nol dengan React + Vite, menggantikan sistem multi-file HTML lama. Menampilkan profil organisasi, galeri kegiatan, dan portal anggota.',
     longDescription:
       'Proyek ini merupakan migrasi penuh dari website statis multi-file HTML ke arsitektur modern berbasis React. Saya memimpin seluruh proses desain dan development, mulai dari pemilihan stack, design tokens, hingga deployment di Vercel dengan HashRouter pattern.',
-    year: '2024',
+    year: '2025',
     color: '#CC0000',
     gradient: 'from-red-900/40 to-black',
     featured: true,
@@ -22,7 +22,7 @@ export const portfolioItems = [
       'Platform streaming musik internal komunitas dengan desain dark navy/liquid gold. Fitur lengkap: lyrics mode, party queue, media session lock screen, PWA offline, dan cross-device sync.',
     longDescription:
       'Zephyrus Music adalah iterasi ketiga dari platform streaming internal PAGASKA. Dibangun dengan Supabase sebagai backend, Cloudflare R2 untuk audio storage, dan Node.js/Express sebagai proxy layer. Saya mengimplementasikan sistem autentikasi Google OAuth, Cinematic Lyrics Mode dengan Web Audio API, dan PWA dengan Service Worker.',
-    year: '2024',
+    year: '2025',
     color: '#C9A84C',
     gradient: 'from-yellow-900/40 to-black',
     featured: true,
@@ -50,7 +50,7 @@ export const portfolioItems = [
       'Sistem identitas visual lengkap untuk organisasi PAGASKA. Mencakup logo guidelines, color palette, typography, dan design tokens yang digunakan di seluruh ekosistem digital.',
     longDescription:
       'Mengembangkan brand system yang konsisten untuk seluruh produk digital PAGASKA. Sistem ini menjadi acuan desain untuk website, musik app, AI interface, dan seluruh material komunikasi organisasi.',
-    year: '2024',
+    year: '2025',
     color: '#C9A84C',
     gradient: 'from-amber-900/40 to-black',
     featured: false,
@@ -92,7 +92,7 @@ export const skills = [
 
 export const experiences = [
   {
-    year: '2025',
+    year: '2025–2026',
     title: 'Koordinator Infokom',
     org: 'PAGASKA',
     orgFull: 'Paskibra Gala Taksaka — SMK Negeri 5 Kota Madiun',
@@ -100,7 +100,7 @@ export const experiences = [
     highlight: true,
   },
   {
-    year: '2025',
+    year: '2025–2026',
     title: 'Koordinator Seksi Bidang Telekomunikasi',
     org: 'OSIS',
     orgFull: 'Organisasi Siswa Intra Sekolah — SMK Negeri 5 Kota Madiun',
@@ -120,6 +120,14 @@ export const techStack = {
 export const roadmap = [
   { phase: 'Phase 1', title: 'Foundation', status: 'done', items: ['Website resmi', 'Brand system', 'Design tokens'] },
   { phase: 'Phase 2', title: 'Platform', status: 'done', items: ['Zephyrus Music', 'PWA support', 'Supabase auth'] },
-  { phase: 'Phase 3', title: 'Intelligence', status: 'active', items: ['Taksaka AI v0.4', 'OpenRouter integration', 'Multi-provider system'] },
-  { phase: 'Phase 4', title: 'Marketplace', status: 'planned', items: ['Verolyz platform', 'Better Auth', 'Cloudflare R2 storage'] },
+  { phase: 'Phase 3', title: 'Intelligence', status: 'done', items: ['Taksaka AI v0.4', 'OpenRouter integration', 'Multi-provider system'] },
+  { phase: 'Phase 4', title: 'Expansion', status: 'active', items: ['Veronime', 'Verosatsu', 'MangaVoid', 'Veromove'] },
+  { phase: 'Phase 5', title: 'Marketplace', status: 'planned', items: ['Verolyz platform', 'Better Auth', 'Cloudflare R2 storage'] },
+];
+
+export const personalProjects = [
+  { name: 'Veronime', desc: 'Platform streaming anime personal.', status: '2025 – Sekarang' },
+  { name: 'Verosatsu', desc: 'Layanan digital berbasis konten visual.', status: '2025 – Sekarang' },
+  { name: 'MangaVoid', desc: 'Platform baca manga dengan UI modern.', status: '2025 – Sekarang' },
+  { name: 'Veromove', desc: 'Platform streaming film dan series.', status: 'Under Development' },
 ];
